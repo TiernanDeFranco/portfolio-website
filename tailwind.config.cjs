@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				lato: ['lato', 'serif'],
+				signature: ['Kaushan Script'],
 			},
 		},
 	},

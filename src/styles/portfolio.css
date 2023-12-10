@@ -1,0 +1,14 @@
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.scrolling-wrapper .item {
+    flex-shrink: 0;
+    margin-right: 2px; 
+    margin-left: 5px;
+    white-space: nowrap;
+}
