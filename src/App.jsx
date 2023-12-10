@@ -17,8 +17,6 @@ return (
 		<Portfolio/>
 		<Technologies/>
 		<Contact/>
-
-
 		<SocialLinks/>
 	</div>
 )

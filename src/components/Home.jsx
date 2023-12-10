@@ -19,7 +19,7 @@ export const Home = () => {
               </h3>
               <p className="text-gray-500 py-4 max-w-md">
                 I have been programming since I was 15 <br /> (around 5 years), 
-                have made some small games when I started, have worked with the .NET MAUI framework for mobile development
+                have made some small games when I started, have worked with the .NET MAUI framework for mobile development,
                 and am currently working on a web application using React and TypeScript
               </p>
     
