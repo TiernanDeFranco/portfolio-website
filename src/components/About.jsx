@@ -2,14 +2,19 @@ import React from 'react'
 
 export const About = () => {
   return (
-   <div name="about" className='w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
-    <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
-        <p className='text-4xl font-bold inline border-b-4 border-blue-400 text-white'>About</p>
+    <div
+    name="about"
+    className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+  >
+     <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-blue-500">
+            About
+          </p>
         </div>
 
 
-        <p className='text-xl mt-5'>
+        <p className="text-xl mt-5">
   Hello there, I'm Tiernan, and I've been immersed in the world of programming since I was 15. Coding has always been more than just a skill for me; it's a tool to transforming ideas into finished products, whether they're practical solutions or just quirky experiments.
 
   Self-taught and driven by curiosity, I've paved my own path in software development. From the early days of wild experimentation to the serious projects I'm currently engaged in, my journey has been about pushing boundaries and embracing the possibilities that code offers.
