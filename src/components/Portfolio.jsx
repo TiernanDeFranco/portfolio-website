@@ -2,24 +2,33 @@ import React from 'react';
 import '../styles/portfolio.css';
 import mcBike from '../assets/minecraftbike.jpg';
 import hmLogo from '../assets/HmLogo2.png';
+import cardCompare from '../assets/cardCompare.png';
 
 export const Portfolio = () => {
 
     const projects = [
-        {
+          {
             id: 1,
+            name: "Card Compare",
+            src: cardCompare,
+            stack: ["React", "TypeScript", "Firebase"],
+            link: "https://dancing-marigold-960781.netlify.app/",
+        },
+        {
+            id: 2,
             name: "Minecraft with a Bike",
             src: mcBike,
             stack: ["GPC","Titan Two"],
             link: "https://github.com/TiernanDeFranco/minecraft-bike",
         },
         {
-            id: 2,
+            id: 3,
             name: "HealthMode (Prototype)",
             src: hmLogo,
             stack: [".NET MAUI", "SQL Server", "AWS", "ASP. NET"],
             link: "https://github.com/TiernanDeFranco/HealthModeApp",
         },
+        
     ]
 
   return (
@@ -36,7 +45,7 @@ export const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
                 {projects.map((project) => (
                     <div key={project.id}  onClick={() => window.open(project.link, "_blank")} className='shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 cursor-pointer'>
                         <label className='justify-center flex py-1 font-bold'>{project.name}</label>
