@@ -26,7 +26,7 @@ export const About = () => {
   Attention to detail is my forte. It's not just about writing lines of code; it's about creating solutions that are not only functional but also practical and efficient.
 
     <br /> <br/>
-  I believe in the 'dream it, build it' philosophy. My portfolio showcases the progression from those early crazy ideas to the robust projects I'm handling now. It's a journey marked by continuous improvement and a commitment to excellence.
+  I believe in the 'dream it, build it' philosophy. My portfolio showcases my skills as a web developer for a passion of creating fun experiences and experimenting with finance.
 
   In this fast-paced tech world, my commitment to learning remains unwavering.
 

@@ -1,32 +1,35 @@
 import React from 'react';
 import '../styles/portfolio.css';
-import mcBike from '../assets/minecraftbike.jpg';
+import fauxnancebank from '../assets/fauxnancebanking.png';
+import fauxnanceinvest from '../assets/fauxnanceinvesting.png';
 import hmLogo from '../assets/HmLogo2.png';
 import cardCompare from '../assets/cardCompare.png';
 
 export const Portfolio = () => {
 
     const projects = [
-          {
+        {
             id: 1,
-            name: "Card Compare",
-            src: cardCompare,
-            stack: ["React", "TypeScript", "Firebase"],
-            link: "https://dancing-marigold-960781.netlify.app/",
+            name: "Fauxnance Banking",
+            src: fauxnancebank,
+            stack: ["React","TypeScript", "Firebase", "Tailwind CSS"],
+            link: "https://fauxnance-banking.netlify.app/",
+            github: "https://github.com/TiernanDeFranco/fauxnance-banking"
         },
         {
-            id: 2,
-            name: "Minecraft with a Bike",
-            src: mcBike,
-            stack: ["GPC","Titan Two"],
-            link: "https://github.com/TiernanDeFranco/minecraft-bike",
-        },
+          id: 2,
+          name: "Card Compare",
+          src: cardCompare,
+          stack: ["React", "TypeScript", "Firebase"],
+          link: "https://cardcompare.io/",
+          github: "https://github.com/TiernanDeFranco/card-compare"
+      },
         {
             id: 3,
             name: "HealthMode (Prototype)",
             src: hmLogo,
             stack: [".NET MAUI", "SQL Server", "AWS", "ASP. NET"],
-            link: "https://github.com/TiernanDeFranco/HealthModeApp",
+            github: "https://github.com/TiernanDeFranco/HealthModeApp",
         },
         
     ]
@@ -46,20 +49,35 @@ export const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                {projects.map((project) => (
-                    <div key={project.id}  onClick={() => window.open(project.link, "_blank")} className='shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 cursor-pointer'>
-                        <label className='justify-center flex py-1 font-bold'>{project.name}</label>
-                        <img src={project.src} alt="" className='rounded-md'/>
-                        <div className="scrolling-wrapper mx-auto py-2 space-x-1">
-                            {project.stack.map((tech, index) => (
-                                <div key={index} className="item flex items-center justify-center border border-gray-300 rounded px-1.5 py-1 text-sm">
-                                    {tech}
-                                </div>
-                            ))}
-                        </div>
+    {projects.map((project) => (
+        <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 cursor-pointer'>
+            <label className='justify-center flex py-1 font-bold'>{project.name}</label>
+            <div className="image-container">
+                <img src={project.src} alt="" className='rounded-md'/>
+            </div>
+            <div className="scrolling-wrapper mx-auto py-2 space-x-1">
+                {project.stack.map((tech, index) => (
+                    <div key={index} className="item flex items-center justify-center border border-gray-300 rounded px-1.5 py-1 text-sm">
+                        {tech}
                     </div>
                 ))}
             </div>
+            <div className="flex justify-around py-2">
+                {project.github && (
+                    <button onClick={() => window.open(project.github, "_blank")} className="border-2 border-gray-600 bg-gradient-to-b from-gray-800 to-gray-900 px-4 py-1 rounded-md text-gray-500 hover:text-gray-200">
+                        GitHub
+                    </button>
+                )}
+                {project.link && (
+                    <button onClick={() => window.open(project.link, "_blank")} className="border-2 border-gray-800 bg-gradient-to-r from-cyan-700 to-blue-900 px-2 py-1 rounded-md text-gray-400 hover:text-gray-100">
+                        Live Version
+                    </button>
+                )}
+            </div>
+        </div>
+    ))}
+</div>
+
 
 
         </div>
