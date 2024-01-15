@@ -12,7 +12,7 @@ export const Portfolio = () => {
             id: 1,
             name: "Fauxnance Banking",
             src: fauxnancebank,
-            stack: ["React","TypeScript", "Firebase", "Tailwind CSS"],
+            stack: ["React","TypeScript", "Firebase"],
             link: "https://fauxnance-banking.netlify.app/",
             github: "https://github.com/TiernanDeFranco/fauxnance-banking"
         },
@@ -70,7 +70,7 @@ export const Portfolio = () => {
                 )}
                 {project.link && (
                     <button onClick={() => window.open(project.link, "_blank")} className="border-2 border-gray-800 bg-gradient-to-r from-cyan-700 to-blue-900 px-2 py-1 rounded-md text-gray-400 hover:text-gray-100">
-                        Live Version
+                        Demo Site
                     </button>
                 )}
             </div>

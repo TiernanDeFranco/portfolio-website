@@ -15,8 +15,10 @@ export const Home = () => {
             I'm a Software Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          I have been programming since I was 15
-(around 5 years), have made some small games when I started, have worked with the .NET MAUI framework for mobile development, and am currently working on a web application using React and TypeScript
+          I have been programming since I was 15 (around 5 years), have made some small games and projects in the beginning, 
+          have worked with the .NET MAUI framework for native mobile development,
+           built some small React + TypeScript projects, and am currently working on 
+           startup utilizing React, TypeScript, Supabase, and Next.js
           </p>
 
           <div>
