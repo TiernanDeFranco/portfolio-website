@@ -32,7 +32,7 @@ const links = [
            Résumé <IoDocumentTextOutline size={30}/>
         </>
         ),
-        href: 'public/ResumeTiernanDeFranco.pdf',
+        href: 'src/assets/ResumeTiernanDeFranco.pdf',
         style: 'rounded-br-md',
         download: true
     }
