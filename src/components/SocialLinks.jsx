@@ -24,17 +24,7 @@ const links = [
         </>
         ),
         href: 'https://github.com/TiernanDeFranco',
-    },
-    {
-        id: 3,
-        child: (
-            <>
-           Résumé <IoDocumentTextOutline size={30}/>
-        </>
-        ),
-        href: 'src/assets/ResumeTiernanDeFranco.pdf',
         style: 'rounded-br-md',
-        download: true
     }
 ]
 
