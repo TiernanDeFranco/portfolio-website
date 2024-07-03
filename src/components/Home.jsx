@@ -1,7 +1,7 @@
-import React from 'react';
-import heroImage from '../assets/hero-image.jpg';
+import React from "react";
+import heroImage from "../assets/hero-image.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import {Link} from 'react-scroll';
+import { Link } from "react-scroll";
 
 export const Home = () => {
   return (
@@ -15,10 +15,10 @@ export const Home = () => {
             I'm a Software Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          I have been programming since I was 15 (around 5 years), have made some small games and projects in the beginning, 
-          have worked with the .NET MAUI framework for native mobile development,
-           built some small React + TypeScript projects, and am currently working on 
-           startup utilizing React, TypeScript, Supabase, and Next.js
+            I have been programming since I was 15, have made some small games
+            and projects in the beginning, have worked with React and Next.js
+            technologies, but now work mainly with Expo / React Native for
+            cross-platform mobile development.
           </p>
 
           <div>
